@@ -14,7 +14,7 @@ import java.util.Locale;
 
 public class ChooseLanguageActivity extends Activity
 {
-    //test
+    //test1
 
     ImageView imageViewHr, imageViewEn;
     String language = "";
