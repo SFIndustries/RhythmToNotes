@@ -40,6 +40,8 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CalibrationActivity.class);
                 startActivity(intent);
+                finish();
+                return;
             }
         });
 

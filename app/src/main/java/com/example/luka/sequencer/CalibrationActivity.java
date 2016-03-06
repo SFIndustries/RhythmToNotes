@@ -96,13 +96,13 @@ public class CalibrationActivity extends Activity
 
                     countdownThread = null;
 
-                    delay = clickTime - soundTime;
-                    String deltaString = (Long.toString(delay / 1000000) + "." + String.format("%06d", (delay % 1000000)));
+                    delay = Math.max(0, clickTime - soundTime);
+                    String deltaString = (Long.toString(delay / 1000000) + "." + String.format("%06d", Math.abs(delay % 1000000)));
                     Toast.makeText(getApplicationContext(), (String) ( getResources().getString(R.string.latency) + " = " +  deltaString + " [ms]"), Toast.LENGTH_SHORT).show();
 
                     SharedPreferences sharedPref = CalibrationActivity.this.getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPref.edit();
-                    editor.putInt("metronomeDelayCorrection", (int) delay / 1000000);
+                    editor.putInt("metronomeDelayCorrection", Math.max(0, (int) delay / 1000000));
                     editor.apply();
 
                     buttonContinue.setVisibility(View.VISIBLE);

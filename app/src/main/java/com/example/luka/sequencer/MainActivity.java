@@ -1764,7 +1764,7 @@ public class MainActivity extends Activity {
         String deltaString = (Long.toString(delta / 1000000 - metronomeDelayCorrection) + "." + String.format("%06d", (delta % 1000000)));
 
         //Toast.makeText(getApplicationContext(), (String) stringMetronomeTimeList, Toast.LENGTH_LONG).show();
-        Toast.makeText(getApplicationContext(), (String) (deltaString + " [ms]"), Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), (String) (deltaString + " [ms]"), Toast.LENGTH_LONG).show();
     }
 
     @Override

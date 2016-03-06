@@ -38,7 +38,8 @@
         <activity
             android:name=".CalibrationActivity"
             android:label="@string/title_activity_calibration"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="sensorLandscape"
+            android:noHistory="true">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
