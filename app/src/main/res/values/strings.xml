@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Sequencer</string>
+
+    <string name="calibrationDescription_en">Due to audio playback latency, calibration must be done before proceeding. After the initial calibration, you will be able to repeat it later.\n\nFour metronome clicks will be played. Touch the screen at the next (fifth) click.</string>
+    <string name="calibrationDescription_hr">Zbog kašnjenja reprodukcije zvuka prije početka je potrebno provesti kalibraciju. Nakon početne kalibracije, moći ćete je po potrebi naknadno provesti.\n\nBit će odsvirana četiri udarca metronoma. Dotaknite ekran u trenutku sljedećeg (petog) udarca.</string>
+
+    <string name="write_description">Play the rhythm by touching the red surface.\nNotation will be shown after the metronome is stopped.</string>
+
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="title_activity_calibration">CalibrationActivity</string>
+
+    <string name="calibration">calibration</string>
+    <string name="calibrationDescription">Default</string>
+    <string name="title_activity_first_start">FirstStartActivity</string>
+    <string name="title_activity_choose_language">ChooseLanguageActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_credits">CreditsActivity</string>
+    <string name="continue_">Continue</string>
+
+    <string name="repeat">Repeat</string>
+    <string name="main_menu">MAIN MENU</string>
+    <string name="select_mode">Select mode</string>
+    <string name="change_language">Change Language</string>
+    <string name="credits">Credits</string>
+    <string name="mode_selection">MODE SELECTION</string>
+    <string name="dotted">Dotted</string>
+    <string name="triplets">Triplets</string>
+    <string name="dotted_plus_triplets">Dotted + Triplets</string>
+    <string name="next">Next</string>
+    <string name="choose_mode">Choose mode</string>
+    <string name="metronome_time_signature_settings">METRONOME AND TIME SIGNATURE SETTINGS</string>
+    <string name="go">GO</string>
+    <string name="app_made_by">App made by</string>
+    <string name="programmers">Programmers</string>
+    <string name="music_notation_font">Music notation font</string>
+    <string name="latency">latency</string>
+    <string name="creditsUPPERCASE">CREDITS</string>
+    <string name="change_languageUPPERCASE">CHANGE LANGUAGE</string>
+    <string name="calibrationUPPERCASE">CALIBRATION</string>
+</resources>

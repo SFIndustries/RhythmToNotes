@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calibrationDescription">Zbog kašnjenja reprodukcije zvuka prije početka je potrebno provesti kalibraciju. Nakon početne kalibracije, moći ćete je po potrebi naknadno provesti.\n\nBit će odsvirana četiri udarca metronoma. Dotaknite ekran u trenutku sljedećeg (petog) udarca.</string>
+    <string name="calibration">Kalibracija</string>
+    <string name="continue_">Nastavi</string>
+    <string name="repeat">Ponovi</string>
+    <string name="main_menu">GLAVNI IZBORNIK</string>
+    <string name="select_mode">Odaberi mod</string>
+    <string name="change_language">Promjena jezika</string>
+    <string name="credits">O autorima</string>
+    <string name="mode_selection">ODABIR MODA</string>
+    <string name="dotted">Note s točkom</string>
+    <string name="triplets">Tripleti</string>
+    <string name="dotted_plus_triplets">Note s točkom + tripleti</string>
+    <string name="next">Dalje</string>
+    <string name="choose_mode">Odaberite jedan of modova. Opis moda će se pojaviti ovdje.</string>
+    <string name="metronome_time_signature_settings">POSTAVKE METRONOMA I TAKTA</string>
+    <string name="go">Kreni</string>
+    <string name="app_made_by">Autori aplikacije</string>
+    <string name="programmers">Programeri</string>
+    <string name="music_notation_font">Font za notaciju glazbe</string>
+    <string name="dotted_description">Za zapisivanje nota koje su trajanjem između osnovnih nota koriste se note s točkom.
+        Ovaj mod je dovoljan za zapisivanje većine jednostavnijih ritmova.</string>
+    <string name="triplets_description">Umjesto nota s točkom koriste se tripleti.
+        Mod se koristi za zapisivanje jazz ili "swing" ritmova.</string>
+    <string name="dotted_plus_triplets_description">Mod se koristi za zapisivanje složenih ritmova koji sadrže i note s točkom i triplete.
+        U ovom modu pretvorba u notaciju može trajati dulje nego u ostala dva moda.</string>
+    <string name="write_description">Odsvirajte ritam dodirivanjem crvene površine.\nNotni zapis će biti prikazan nakon što se zaustavi metronom.</string>
+    <string name="latency">Latencija</string>
+    <string name="creditsUPPERCASE">O AUTORIMA</string>
+    <string name="change_languageUPPERCASE">PROMJENA JEZIKA</string>
+    <string name="calibrationUPPERCASE">KALIBRACIJA</string>
+</resources>

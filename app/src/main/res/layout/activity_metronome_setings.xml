@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin" tools:context=".MainActivity"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/metronome_time_signature_settings"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:layout_weight="0.1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="0.9">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:weightSum="1"
+            android:gravity="center_vertical">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/menubutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;"
+                android:id="@+id/buttonTempoM"
+                android:layout_alignTop="@+id/buttonTempoP"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textViewTempo"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/buttonTempoM"
+                android:layout_toLeftOf="@+id/buttonTempoP"
+                android:layout_toStartOf="@+id/buttonTempoP"
+                android:layout_above="@+id/buttonStart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.4"
+                android:textStyle="bold" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/menubutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:id="@+id/buttonTempoP"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/buttonLowerM"
+                android:layout_toStartOf="@+id/buttonLowerM"
+                android:layout_weight="0" />
+
+            <Button
+                android:background="@drawable/menubutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:id="@+id/buttonStart"
+                android:layout_below="@+id/buttonTempoM"
+                android:layout_alignLeft="@+id/buttonTempoM"
+                android:layout_alignStart="@+id/buttonTempoM"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:background="@drawable/menubutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:id="@+id/buttonStop"
+                android:layout_below="@+id/textViewTempo"
+                android:layout_toRightOf="@+id/buttonStart"
+                android:layout_toEndOf="@+id/buttonStart"
+                android:layout_weight="0"
+                android:layout_marginLeft="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.4">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:gravity="center_vertical"
+                android:weightSum="1">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/menubutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:id="@+id/buttonUpperM"
+                    android:layout_alignTop="@+id/buttonTempoP"
+                    android:layout_toRightOf="@+id/buttonStop"
+                    android:layout_toEndOf="@+id/buttonStop"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textViewUpper"
+                    android:gravity="center"
+                    android:layout_alignBottom="@+id/buttonUpperM"
+                    android:layout_toRightOf="@+id/buttonUpperM"
+                    android:layout_toEndOf="@+id/buttonUpperM"
+                    android:layout_alignTop="@+id/buttonUpperP"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.1"
+                    android:textStyle="bold" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/menubutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/buttonUpperP"
+                    android:layout_alignTop="@+id/buttonUpperM"
+                    android:layout_toRightOf="@+id/textViewUpper"
+                    android:layout_toEndOf="@+id/textViewUpper"
+                    android:layout_weight="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:gravity="center_vertical"
+                android:weightSum="1">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/menubutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:id="@+id/buttonLowerM"
+                    android:layout_alignBottom="@+id/buttonStop"
+                    android:layout_alignLeft="@+id/buttonUpperM"
+                    android:layout_alignStart="@+id/buttonUpperM"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textViewLower"
+                    android:gravity="center"
+                    android:layout_alignBottom="@+id/buttonLowerP"
+                    android:layout_toLeftOf="@+id/buttonLowerP"
+                    android:layout_toStartOf="@+id/buttonLowerP"
+                    android:layout_below="@+id/textViewUpper"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.1"
+                    android:textStyle="bold" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/menubutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/buttonLowerP"
+                    android:layout_alignTop="@+id/buttonLowerM"
+                    android:layout_alignLeft="@+id/buttonUpperP"
+                    android:layout_alignStart="@+id/buttonUpperP"
+                    android:layout_weight="0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:background="@drawable/menubutton1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/go"
+            android:id="@+id/buttonGo"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/textViewLower"
+            android:layout_alignStart="@+id/textViewLower"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+</LinearLayout>

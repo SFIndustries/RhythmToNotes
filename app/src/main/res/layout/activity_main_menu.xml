@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.luka.sequencer.MainMenuActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/main_menu"
+        android:id="@+id/textView12"
+        android:layout_weight="0.1"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/select_mode"
+            android:id="@+id/buttonSelectMode"
+            android:background="@drawable/menubutton1"
+            android:layout_weight="1"
+            android:contextClickable="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/calibration"
+            android:id="@+id/buttonCalibration"
+            android:background="@drawable/menubutton1"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/change_language"
+            android:id="@+id/buttonChangeLanguage"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/menubutton1"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/credits"
+            android:id="@+id/buttonCredits"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/menubutton1"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

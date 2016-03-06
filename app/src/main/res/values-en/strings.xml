@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calibrationDescription">Due to audio playback latency, calibration must be done before proceeding. After the initial calibration, you will be able to repeat it later.\n\nFour metronome clicks will be played. Touch the screen at the next (fifth) click.</string>
+    <string name="calibration">Calibration</string>
+    <string name="continue_">Continue</string>
+    <string name="repeat">Repeat</string>
+    <string name="main_menu">MAIN MENU</string>
+    <string name="select_mode">Select mode</string>
+    <string name="change_language">Change Language</string>
+    <string name="credits">Credits</string>
+    <string name="mode_selection">MODE SELECTION</string>
+    <string name="dotted">Dotted notes</string>
+    <string name="triplets">Triplets</string>
+    <string name="dotted_plus_triplets">Dotted notes + Triplets</string>
+    <string name="next">Next</string>
+    <string name="choose_mode">Choose one of the modes. Its description will appear here.</string>
+    <string name="metronome_time_signature_settings">METRONOME AND TIME SIGNATURE SETTINGS</string>
+    <string name="go">Go</string>
+    <string name="app_made_by">App made by</string>
+    <string name="programmers">Programmers</string>
+    <string name="music_notation_font">Music notation font</string>
+    <string name="dotted_description">For notating durations in between of basic notes\' durations, dotted notes are used. This mode is sufficient for notating most simpler rhythms. </string>
+    <string name="dotted_plus_triplets_description">This mode is used for notating complex rhythms which contain both dotted notes and triplets. Note that it could take more time for notation than in other two modes. </string>
+    <string name="triplets_description">Instead of dotted notes, triplets are used. This mode is used for notating jazz, "swing" rhythms.</string>
+    <string name="write_description">Play the rhythm by touching the red surface.\nNotation will be shown after the metronome is stopped.</string>
+    <string name="latency">Latency</string>
+    <string name="creditsUPPERCASE">CREDITS</string>
+    <string name="change_languageUPPERCASE">CHANGE LANGUAGE</string>
+    <string name="calibrationUPPERCASE">CALIBRATION</string>
+</resources>
