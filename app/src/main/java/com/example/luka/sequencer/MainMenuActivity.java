@@ -16,6 +16,8 @@ public class MainMenuActivity extends Activity {
 
     Button buttonSelectMode, buttonCalibration, buttonChangeLanguage, buttonCredits;
 
+    // RADI
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
