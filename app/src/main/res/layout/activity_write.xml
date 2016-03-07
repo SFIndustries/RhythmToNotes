@@ -29,7 +29,8 @@
             android:text="Start"
             android:id="@+id/buttonStart1"
             android:background="@drawable/menubutton1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="20dp" />
 
         <Button
             android:layout_width="0dp"
@@ -37,7 +38,8 @@
             android:text="Stop"
             android:id="@+id/buttonStop1"
             android:background="@drawable/menubutton1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
