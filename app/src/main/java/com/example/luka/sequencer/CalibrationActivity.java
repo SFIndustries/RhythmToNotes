@@ -38,6 +38,8 @@ public class CalibrationActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        //test
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calibration);
 
