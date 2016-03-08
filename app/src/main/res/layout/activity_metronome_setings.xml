@@ -6,7 +6,8 @@
     android:paddingBottom="@dimen/activity_horizontal_margin" tools:context=".MainActivity"
     android:id="@+id/linearLayout"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#ffffff">
 
     <TextView
         android:layout_width="match_parent"
@@ -230,5 +231,11 @@
             android:textSize="20dp" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutAdMetronomeSettings"></LinearLayout>
 
 </LinearLayout>

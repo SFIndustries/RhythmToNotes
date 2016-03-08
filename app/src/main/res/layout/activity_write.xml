@@ -3,7 +3,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.luka.sequencer.WriteActivity"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#ffffff">
 
     <Button
         android:layout_width="match_parent"
@@ -21,22 +22,13 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.3">
+        android:layout_weight="0.15">
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Start"
             android:id="@+id/buttonStart1"
-            android:background="@drawable/menubutton1"
-            android:layout_weight="1"
-            android:textSize="20dp" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Stop"
-            android:id="@+id/buttonStop1"
             android:background="@drawable/menubutton1"
             android:layout_weight="1"
             android:textSize="20dp" />
@@ -48,13 +40,21 @@
         android:layout_height="0dp"
         android:id="@+id/horizontalScrollViewNotation"
         android:layout_centerHorizontal="true"
-        android:layout_weight="0.3" >
+        android:layout_weight="0.45"
+        android:scrollIndicators="bottom">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textViewNotation" />
+            android:id="@+id/textViewNotation"
+            android:gravity="center" />
     </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutAdWrite"></LinearLayout>
 
 </LinearLayout>
