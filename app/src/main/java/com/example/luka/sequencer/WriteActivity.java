@@ -9,6 +9,7 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.Looper;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -100,14 +101,15 @@ public class WriteActivity extends Activity
 
         buttonClick1 = (Button) findViewById(R.id.buttonClick1);
         buttonStart1 = (Button) findViewById(R.id.buttonStart1);
-        buttonStop1 = (Button) findViewById(R.id.buttonStop1);
+        //buttonStop1 = (Button) findViewById(R.id.buttonStop1);
         //buttonPDF = (Button) findViewById(R.id.buttonPDF);
         textViewNotation = (TextView) findViewById(R.id.textViewNotation);
 
-        Typeface font = Typeface.createFromAsset(getAssets(), "rhythms.ttf");
-        textViewNotation.setTypeface(font);
-        textViewNotation.setTextSize(TypedValue.COMPLEX_UNIT_SP, 50.0f);
+//        Typeface font = Typeface.createFromAsset(getAssets(), "rhythms.ttf");
+//        textViewNotation.setTypeface(font);
+//        textViewNotation.setTextSize(TypedValue.COMPLEX_UNIT_SP, 50.0f);
 
+        textViewNotation.setText(R.string.write_description);
 
         Bundle extras = getIntent().getExtras();
         mode = extras.getChar("mode");
@@ -159,10 +161,31 @@ public class WriteActivity extends Activity
 
         buttonStart1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                metronomeTimeList = new ArrayList();
-                metronomeErrorList = new ArrayList();
-                ClickTimeList = new ArrayList();
-                StartMetronomeThread();
+
+                if (!play)
+                {
+                    Typeface font = Typeface.createFromAsset(getAssets(), "rhythms.ttf");
+                    textViewNotation.setTypeface(font);
+                    textViewNotation.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 50.0f);
+                    textViewNotation.setGravity(Gravity.CENTER_VERTICAL);
+
+                    metronomeTimeList = new ArrayList();
+                    metronomeErrorList = new ArrayList();
+                    ClickTimeList = new ArrayList();
+                    StartMetronomeThread();
+
+                    textViewNotation.setText("");
+
+                    buttonStart1.setText("Stop");
+                }
+                else
+                {
+                    StopMetronomeThread();
+
+                    StartWrite();
+                    buttonStart1.setText("Start");
+
+                }
 
                 //linearLayoutRhythm.removeAllViews();
 
@@ -170,16 +193,16 @@ public class WriteActivity extends Activity
             }
         });
 
-        buttonStop1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                if (!play) return;
-                StopMetronomeThread();
-
-                StartWrite();
-
-            }
-        });
+//        buttonStop1.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//
+//                if (!play) return;
+//                StopMetronomeThread();
+//
+//                StartWrite();
+//
+//            }
+//        });
 
 //        buttonPDF.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View v) {

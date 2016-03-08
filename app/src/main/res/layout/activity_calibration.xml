@@ -7,7 +7,8 @@
     tools:context="com.example.luka.sequencer.CalibrationActivity"
     android:weightSum="1"
     android:baselineAligned="false"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffffff">
 
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +33,6 @@
             android:id="@+id/textViewCountdown"
             android:digits="1"
             android:textSize="100dp"
-            android:text="4"
             android:layout_below="@+id/buttonContinue"
             android:layout_centerHorizontal="true" />
 
@@ -64,4 +64,10 @@
             android:layout_alignParentStart="true"
             android:visibility="gone" />
     </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutAdCalibration"></LinearLayout>
 </LinearLayout>

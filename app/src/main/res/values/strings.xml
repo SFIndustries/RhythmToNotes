@@ -4,7 +4,7 @@
     <string name="calibrationDescription_en">Due to audio playback latency, calibration must be done before proceeding. After the initial calibration, you will be able to repeat it later.\n\nFour metronome clicks will be played. Touch the screen at the next (fifth) click.</string>
     <string name="calibrationDescription_hr">Zbog kašnjenja reprodukcije zvuka prije početka je potrebno provesti kalibraciju. Nakon početne kalibracije, moći ćete je po potrebi naknadno provesti.\n\nBit će odsvirana četiri udarca metronoma. Dotaknite ekran u trenutku sljedećeg (petog) udarca.</string>
 
-    <string name="write_description">Play the rhythm by touching the red surface.\nNotation will be shown after the metronome is stopped.</string>
+    <string name="write_description">Play the rhythm by touching the red surface. Notation will be shown after the metronome is stopped.</string>
 
 
 

@@ -190,11 +190,11 @@ class CountdownThread extends Thread
             calibrationActivity.firstStart = false;
         }
 
-        calibrationActivity.textViewCountdown.post(new Runnable() {
-            public void run() {
-                calibrationActivity.textViewCountdown.setText("4");
-            }
-        });
+//        calibrationActivity.textViewCountdown.post(new Runnable() {
+//            public void run() {
+//                calibrationActivity.textViewCountdown.setText("4");
+//            }
+//        });
 
         for (int i = 0; i<5; i++) {
             //mainActivity.playSound();
@@ -216,11 +216,11 @@ class CountdownThread extends Thread
             }
 
             final int iTemp = i;
-            calibrationActivity.textViewCountdown.post(new Runnable() {
-                public void run() {
-                    calibrationActivity.textViewCountdown.setText(Integer.toString(4-iTemp));
-                }
-            });
+//            calibrationActivity.textViewCountdown.post(new Runnable() {
+//                public void run() {
+//                    calibrationActivity.textViewCountdown.setText(Integer.toString(4-iTemp));
+//                }
+//            });
 
             delay = System.nanoTime() - start;
             start1 = System.nanoTime();

@@ -22,7 +22,7 @@
     <string name="dotted_description">For notating durations in between of basic notes\' durations, dotted notes are used. This mode is sufficient for notating most simpler rhythms. </string>
     <string name="dotted_plus_triplets_description">This mode is used for notating complex rhythms which contain both dotted notes and triplets. Note that it could take more time for notation than in other two modes. </string>
     <string name="triplets_description">Instead of dotted notes, triplets are used. This mode is used for notating jazz, "swing" rhythms.</string>
-    <string name="write_description">Play the rhythm by touching the red surface.\nNotation will be shown after the metronome is stopped.</string>
+    <string name="write_description">Play the rhythm by touching the red surface. Notation will be shown after the metronome is stopped.</string>
     <string name="latency">Latency</string>
     <string name="creditsUPPERCASE">CREDITS</string>
     <string name="change_languageUPPERCASE">CHANGE LANGUAGE</string>
