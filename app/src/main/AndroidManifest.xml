@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.luka.sequencer" >
+    package="com.example.luka.rhythmtonotes" >
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         //android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.luka.rhythmtonotes.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorLandscape" >
 
@@ -21,7 +21,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".ModeSelectionActivity"
+            android:name="com.example.luka.rhythmtonotes.ModeSelectionActivity"
             android:label="@string/title_activity_menu"
             android:screenOrientation="sensorLandscape" >
 
@@ -31,15 +31,15 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".WriteActivity"
+            android:name="com.example.luka.rhythmtonotes.WriteActivity"
             android:label="@string/title_activity_write"
             android:screenOrientation="sensorLandscape" >
         </activity>
         <activity
-            android:name=".CalibrationActivity"
+            android:name="com.example.luka.rhythmtonotes.CalibrationActivity"
             android:label="@string/title_activity_calibration"
-            android:screenOrientation="sensorLandscape"
-            android:noHistory="true">
+            android:noHistory="true"
+            android:screenOrientation="sensorLandscape" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -47,29 +47,36 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".FirstStartActivity"
+            android:name="com.example.luka.rhythmtonotes.FirstStartActivity"
             android:label="@string/title_activity_first_start"
+            android:screenOrientation="sensorLandscape" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-            android:screenOrientation="sensorLandscape"
-            android:noHistory="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
-            android:name=".ChooseLanguageActivity"
+            android:name="com.example.luka.rhythmtonotes.ChooseLanguageActivity"
             android:label="@string/title_activity_choose_language"
             android:screenOrientation="sensorLandscape" >
         </activity>
         <activity
-            android:name=".MainMenuActivity"
+            android:name="com.example.luka.rhythmtonotes.MainMenuActivity"
             android:label="@string/title_activity_main_menu" >
         </activity>
         <activity
-            android:name=".CreditsActivity"
+            android:name="com.example.luka.rhythmtonotes.CreditsActivity"
             android:label="@string/title_activity_credits" >
+        </activity>
+        <activity
+            android:name="com.example.luka.rhythmtonotes.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

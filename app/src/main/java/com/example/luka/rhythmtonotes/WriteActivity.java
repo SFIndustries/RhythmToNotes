@@ -1,8 +1,7 @@
-package com.example.luka.sequencer;
+package com.example.luka.rhythmtonotes;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -12,11 +11,9 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.content.Context;
 
@@ -28,7 +25,6 @@ import java.util.Timer;
 
 import android.print.pdf.PrintedPdfDocument;
 import android.print.PrintAttributes;
-import android.print.PrintAttributes.Builder;
 import android.graphics.pdf.PdfDocument;
 import java.io.File;
 import android.os.Environment;
@@ -213,7 +209,8 @@ public class WriteActivity extends Activity
 //        });
 
         //Toast.makeText(getApplicationContext(), (String) ("Play the rhythm by touching the red surface.\nNotation will be shown after the metronome is stopped."), Toast.LENGTH_LONG).show();
-        Toast.makeText(getApplicationContext(), (String) (getResources().getString(R.string.write_description)), Toast.LENGTH_LONG).show();
+
+        //Toast.makeText(getApplicationContext(), (String) (getResources().getString(R.string.write_description)), Toast.LENGTH_LONG).show();
 
 
     }

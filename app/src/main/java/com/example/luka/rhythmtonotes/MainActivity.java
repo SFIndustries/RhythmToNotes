@@ -1,4 +1,4 @@
-package com.example.luka.sequencer;
+package com.example.luka.rhythmtonotes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,7 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.media.AudioManager;
 import android.media.SoundPool.OnLoadCompleteListener;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;

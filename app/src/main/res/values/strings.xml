@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sequencer</string>
+    <string name="app_name">Rhythm to Notes</string>
 
     <string name="calibrationDescription_en">Due to audio playback latency, calibration must be done before proceeding. After the initial calibration, you will be able to repeat it later.\n\nFour metronome clicks will be played. Touch the screen at the next (fifth) click.</string>
     <string name="calibrationDescription_hr">Zbog kašnjenja reprodukcije zvuka prije početka je potrebno provesti kalibraciju. Nakon početne kalibracije, moći ćete je po potrebi naknadno provesti.\n\nBit će odsvirana četiri udarca metronoma. Dotaknite ekran u trenutku sljedećeg (petog) udarca.</string>
@@ -42,4 +42,9 @@
     <string name="creditsUPPERCASE">CREDITS</string>
     <string name="change_languageUPPERCASE">CHANGE LANGUAGE</string>
     <string name="calibrationUPPERCASE">CALIBRATION</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="pressAgain">Press again to exit.</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>
