@@ -123,8 +123,22 @@ public class CalibrationActivity extends Activity
 
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
-                startActivity(intent);
+
+                final SharedPreferences sharedPref = CalibrationActivity.this.getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
+                boolean firstStartSP = sharedPref.getBoolean("firstStart", true);
+
+                if ( firstStartSP )
+                {
+                    Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    finish();
+                    return;
+                }
+
+
             }
         });
 

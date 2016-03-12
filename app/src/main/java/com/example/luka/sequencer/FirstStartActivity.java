@@ -58,9 +58,9 @@ public class FirstStartActivity extends Activity {
         buttonCalibration1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putBoolean("firstStart", false);
-                editor.apply();
+//                SharedPreferences.Editor editor = sharedPref.edit();
+//                editor.putBoolean("firstStart", false);
+//                editor.apply();
 
                 Intent intent = new Intent(getApplicationContext(), CalibrationActivity.class);
                 startActivity(intent);
