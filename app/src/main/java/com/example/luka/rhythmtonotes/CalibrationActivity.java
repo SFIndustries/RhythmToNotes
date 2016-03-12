@@ -15,6 +15,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class CalibrationActivity extends Activity
 {
     Button buttonContinue, buttonRepeat;
@@ -39,6 +42,9 @@ public class CalibrationActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calibration);
 
+        AdView mAdView = (AdView) findViewById(R.id.adViewCalibration);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         buttonContinue = (Button) findViewById(R.id.buttonContinue);
         buttonRepeat = (Button) findViewById(R.id.buttonRepeat);

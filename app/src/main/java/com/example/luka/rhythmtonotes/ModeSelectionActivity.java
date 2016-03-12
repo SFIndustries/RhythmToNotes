@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class ModeSelectionActivity extends Activity {
 
     Button buttonModeDotted, buttonModeTriplets, buttonModeDottedPTriplets, buttonStartMode;
@@ -23,6 +26,10 @@ public class ModeSelectionActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mode_select);
+
+        AdView mAdView = (AdView) findViewById(R.id.adViewModeSelection);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         buttonModeDotted = (Button) findViewById(R.id.buttonModeDotted);
         buttonModeTriplets = (Button) findViewById(R.id.buttonModeTriplets);

@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class FirstStartActivity extends Activity {
 
     Button buttonCalibration1;
@@ -21,6 +24,10 @@ public class FirstStartActivity extends Activity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_start);
+
+        AdView mAdView = (AdView) findViewById(R.id.adViewFirstStart);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         final SharedPreferences sharedPref = FirstStartActivity.this.getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
         firstStart = sharedPref.getBoolean("firstStart", true);
