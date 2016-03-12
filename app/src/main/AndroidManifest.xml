@@ -50,8 +50,8 @@
             android:name=".FirstStartActivity"
             android:label="@string/title_activity_first_start"
 
-            android:screenOrientation="sensorLandscape" >
-            <!--android:noHistory="true"-->
+            android:screenOrientation="sensorLandscape"
+            android:noHistory="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

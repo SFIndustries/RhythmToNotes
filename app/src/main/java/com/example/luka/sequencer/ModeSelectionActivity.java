@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -14,6 +15,7 @@ public class ModeSelectionActivity extends Activity {
 
     Button buttonModeDotted, buttonModeTriplets, buttonModeDottedPTriplets, buttonStartMode;
     TextView textViewChooseMode, textViewModeDescription;
+    ImageView imageView;
 
     char chosenMode = 0;
 
@@ -30,6 +32,8 @@ public class ModeSelectionActivity extends Activity {
         textViewChooseMode = (TextView) findViewById(R.id.textViewChooseMode);
         textViewModeDescription = (TextView) findViewById(R.id.textViewModeDescription);
 
+        imageView = (ImageView) findViewById(R.id.imageView);
+
         HideDescriptions();
 
         buttonModeDotted.setOnClickListener
@@ -41,6 +45,7 @@ public class ModeSelectionActivity extends Activity {
                         ShowDescriptions();
                         chosenMode = 'd';
                         textViewModeDescription.setText(R.string.dotted_description);
+                        imageView.setImageResource(R.drawable.dottedrhythm);
                     }
                 }
                 );
@@ -54,6 +59,7 @@ public class ModeSelectionActivity extends Activity {
                         ShowDescriptions();
                         chosenMode = 't';
                         textViewModeDescription.setText(R.string.triplets_description);
+                        imageView.setImageResource(R.drawable.tripletsrhythm);
 
                     }
                 }
@@ -68,6 +74,7 @@ public class ModeSelectionActivity extends Activity {
                         ShowDescriptions();
                         chosenMode = 'b';
                         textViewModeDescription.setText(R.string.dotted_plus_triplets_description);
+                        imageView.setImageResource(R.drawable.dottedplustripletsrhythm);
                     }
                 }
                 );

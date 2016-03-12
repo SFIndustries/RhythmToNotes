@@ -42,13 +42,12 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CalibrationActivity.class);
                 startActivity(intent);
-                finish();
-                return;
+                //finish();
+                //return;
             }
         });
 
-        buttonChangeLanguage.setOnClickListener(new View.OnClickListener()
-        {
+        buttonChangeLanguage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ChooseLanguageActivity.class);
                 startActivityForResult(intent, 1);
@@ -57,14 +56,18 @@ public class MainMenuActivity extends Activity {
             }
         });
 
-        buttonCredits.setOnClickListener(new View.OnClickListener()
-        {
+        buttonCredits.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CreditsActivity.class);
                 startActivity(intent);
 
             }
         });
+
+        SharedPreferences sharedPref = MainMenuActivity.this.getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putBoolean("firstStart", false);
+        editor.apply();
 
     }
 
