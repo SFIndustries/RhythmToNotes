@@ -31,4 +31,7 @@
     <string name="change_languageUPPERCASE">PROMJENA JEZIKA</string>
     <string name="calibrationUPPERCASE">KALIBRACIJA</string>
     <string name="pressAgain">Pritisnite još jednom da biste izašli iz aplikacije.</string>
+    <string name="icon_images">Slike za ikonu aplikacije:</string>
+    <string name="splash_images">Slike za splash screen</string>
+    <string name="img_credits">Slike za splash screen i ikonu aplikacije</string>
 </resources>

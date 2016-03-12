@@ -17,7 +17,7 @@
         android:id="@+id/textView11"
         android:layout_weight="0.1"
         android:textStyle="bold"
-        android:textSize="22dp" />
+        android:textSize="22sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/textViewCountdown"
             android:digits="1"
-            android:textSize="100dp"
+            android:textSize="100sp"
             android:layout_below="@+id/buttonContinue"
             android:layout_centerHorizontal="true" />
 
