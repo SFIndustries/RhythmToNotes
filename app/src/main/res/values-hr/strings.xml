@@ -30,4 +30,5 @@
     <string name="creditsUPPERCASE">O AUTORIMA</string>
     <string name="change_languageUPPERCASE">PROMJENA JEZIKA</string>
     <string name="calibrationUPPERCASE">KALIBRACIJA</string>
+    <string name="pressAgain">Pritisnite još jednom da biste izašli iz aplikacije.</string>
 </resources>

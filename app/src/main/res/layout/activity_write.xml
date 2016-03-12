@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.luka.sequencer.WriteActivity"
+    tools:context="com.example.luka.rhythmtonotes.WriteActivity"
     android:orientation="vertical"
     android:weightSum="1"
     android:background="#ffffff">

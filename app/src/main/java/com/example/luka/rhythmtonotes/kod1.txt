@@ -1,4 +1,4 @@
-package com.example.luka.sequencer;
+package rhythmtonotes;
 
 import android.app.Activity;
 import android.graphics.Typeface;

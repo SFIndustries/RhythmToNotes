@@ -1,4 +1,4 @@
-package com.example.luka.sequencer;
+package com.example.luka.rhythmtonotes;
 
 import android.app.Activity;
 import android.content.Context;
