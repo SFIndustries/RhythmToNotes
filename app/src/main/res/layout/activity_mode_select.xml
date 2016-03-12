@@ -8,7 +8,6 @@
     android:paddingLeft="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_horizontal_margin"
     android:background="#ffffff">
 
     <TextView
@@ -79,7 +78,8 @@
                 android:background="@drawable/menubutton1"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:layout_marginTop="2dp"
-                android:textSize="22dp" />
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -124,7 +124,8 @@
                 android:layout_weight="0.2"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:layout_marginLeft="2dp"
-                android:textSize="22dp" />
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -133,6 +134,19 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayoutAdModeSelection"></LinearLayout>
+        android:id="@+id/linearLayoutAdModeSelection"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewModeSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
 
 </LinearLayout>

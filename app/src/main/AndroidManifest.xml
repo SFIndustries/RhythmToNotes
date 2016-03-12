@@ -11,7 +11,7 @@
         <activity
             android:name="com.example.luka.rhythmtonotes.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -23,7 +23,7 @@
         <activity
             android:name="com.example.luka.rhythmtonotes.ModeSelectionActivity"
             android:label="@string/title_activity_menu"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -33,13 +33,13 @@
         <activity
             android:name="com.example.luka.rhythmtonotes.WriteActivity"
             android:label="@string/title_activity_write"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name="com.example.luka.rhythmtonotes.CalibrationActivity"
             android:label="@string/title_activity_calibration"
             android:noHistory="true"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -49,7 +49,7 @@
         <activity
             android:name="com.example.luka.rhythmtonotes.FirstStartActivity"
             android:label="@string/title_activity_first_start"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
 
@@ -59,20 +59,22 @@
         <activity
             android:name="com.example.luka.rhythmtonotes.ChooseLanguageActivity"
             android:label="@string/title_activity_choose_language"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name="com.example.luka.rhythmtonotes.MainMenuActivity"
-            android:label="@string/title_activity_main_menu" >
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name="com.example.luka.rhythmtonotes.CreditsActivity"
-            android:label="@string/title_activity_credits" >
+            android:label="@string/title_activity_credits"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name="com.example.luka.rhythmtonotes.SplashActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

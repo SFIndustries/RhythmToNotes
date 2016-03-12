@@ -17,6 +17,9 @@ import android.widget.TextView;
 import android.media.AudioManager;
 import android.media.SoundPool.OnLoadCompleteListener;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -84,6 +87,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_metronome_setings);
+
+        AdView mAdView = (AdView) findViewById(R.id.adViewMetronomeSettings);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         textViewBpm = (TextView) findViewById(R.id.textViewTempo);
         textViewUpper = (TextView) findViewById(R.id.textViewUpper);

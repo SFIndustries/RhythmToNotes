@@ -30,6 +30,9 @@ import java.io.File;
 import android.os.Environment;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -94,6 +97,10 @@ public class WriteActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
+
+        AdView mAdView = (AdView) findViewById(R.id.adViewWrite);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         buttonClick1 = (Button) findViewById(R.id.buttonClick1);
         buttonStart1 = (Button) findViewById(R.id.buttonStart1);
