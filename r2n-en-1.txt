@@ -2,10 +2,10 @@ Rhythm to Notes
 
 Get note durations written out by tapping to a metronome.
 
-Rhythm to Notes is an app designed to find and write out note durations based on the rhythm of the user's tapping. Rhythm to Notes can work in three modes. The modes determine how Rhythm to Notes will notate the notes whose durations are in-between the durations of basic notes. The modes available in Rhythm to Notes are:
+Rhythm to Notes is an app designed to find and write out note durations based on the rhythm of the user's tapping. Rhythm to Notes can work in three modes, which determine how Rhythm to Notes will notate the notes whose durations are in-between the durations of basic notes. The modes available in Rhythm to Notes are:
 
 1. Dotted notes - The most basic mode; uses dotted notes. The duration of a dotted note is one and a half times that of the original note.
 2. Triplets - Uses triplets instead of dotted notes. The duration of each note in a triplet is 2/3 that of the original note. Useful for notating more complex rhythms, like those found in jazz and swing.
 3. Dotted notes + Triplets - The most complex mode; uses both dotted notes and triplets.
 
-After selecting a mode, you can also select the metronome tempo and the time signature. Afterwards, you will be able to notate a rhythm by tapping the Start button, and then tapping the red area of the screen in the desired rhythm. Metronome clicks will be played to help you keep a steady tempo. After tapping the Stop button, the notes will be written out on the screen.
+In addition to selecting a mode, you can also select the metronome tempo and the time signature. Afterwards, you will be able to notate a rhythm by tapping the Start button, and then tapping the red area of the screen in the desired rhythm. Metronome clicks will be played to help you keep a steady tempo. After tapping the Stop button, the notes will be written out on the screen.
