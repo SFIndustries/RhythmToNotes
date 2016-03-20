@@ -45,7 +45,13 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="pressAgain">Press again to exit.</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Write_banner_ad_unit_id">ca-app-pub-4395115168912085/6525385451</string>
+    <string name="MainMenu_banner_ad_unit_id">ca-app-pub-4395115168912085/4424700251</string>
+    <string name="ModeSelect_banner_ad_unit_id">ca-app-pub-4395115168912085/5048652259</string>
+    <string name="Credits_banner_ad_unit_id">ca-app-pub-4395115168912085/9618452655</string>
+    <string name="FirstStart_banner_ad_unit_id">ca-app-pub-4395115168912085/3571919053</string>
+    <string name="Metronome_banner_ad_unit_id">ca-app-pub-4395115168912085/6258883458</string>
+
     <string name="splash_images">Splash screen images:</string>
     <string name="icon_images">App icon images:</string>
     <string name="dotted_description">For notating durations in between of basic notes\' durations, dotted notes are used. This mode is sufficient for notating most simpler rhythms.</string>
