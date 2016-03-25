@@ -1,9 +1,11 @@
 package com.example.luka.rhythmtonotes;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -96,6 +98,7 @@ public class MainMenuActivity extends Activity {
         pressedOnce = false;
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onBackPressed()
     {
@@ -106,7 +109,10 @@ public class MainMenuActivity extends Activity {
         }
         else
         {
-            finish();
+            //finish();
+            //System.exit(0);
+
+            this.finishAffinity();
             return;
         }
 
