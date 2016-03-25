@@ -146,8 +146,8 @@ public class MainActivity extends Activity {
             }
         });
 
-        soundIDLow = soundPool.load(this, R.raw.clicklow1, 1);
-        soundIDHigh = soundPool.load(this, R.raw.clickhigh1, 1);
+        soundIDLow = soundPool.load(this, R.raw.clicklow3, 1);
+        soundIDHigh = soundPool.load(this, R.raw.clickhigh3, 1);
         soundIDStick = soundPool.load(this, R.raw.stick, 1);
 
         View.OnTouchListener bpmPMListener = new View.OnTouchListener()

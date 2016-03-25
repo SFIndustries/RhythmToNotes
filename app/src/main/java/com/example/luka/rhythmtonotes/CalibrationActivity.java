@@ -42,9 +42,9 @@ public class CalibrationActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calibration);
 
-        AdView mAdView = (AdView) findViewById(R.id.adViewCalibration);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        AdView mAdView = (AdView) findViewById(R.id.adViewCalibration);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
         buttonContinue = (Button) findViewById(R.id.buttonContinue);
         buttonRepeat = (Button) findViewById(R.id.buttonRepeat);
@@ -75,8 +75,8 @@ public class CalibrationActivity extends Activity
             }
         });
 
-        soundIDLow = soundPool.load(this, R.raw.clicklow1, 1);
-        soundIDHigh = soundPool.load(this, R.raw.clickhigh1, 1);
+        soundIDLow = soundPool.load(this, R.raw.clicklow3, 1);
+        soundIDHigh = soundPool.load(this, R.raw.clickhigh3, 1);
 
         //countdownThread = new CountdownThread(this);
 
@@ -155,6 +155,11 @@ public class CalibrationActivity extends Activity
 
         StartCountdown();
 
+    }
+
+    protected void OnResume()
+    {
+        super.onResume();
     }
 
     void StartCountdown()
